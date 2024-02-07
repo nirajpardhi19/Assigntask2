@@ -1,11 +1,11 @@
-
+// __tests__/api.test.js
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import { render, waitFor } from '@testing-library/react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Provider } from 'react-redux';
-import store from './store';
-import Home from './components/Home';
+import store from '../store';
+import Home from '../components/Home';
 
 const mock = new MockAdapter(axios);
 const queryClient = new QueryClient();
