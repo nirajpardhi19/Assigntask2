@@ -22,7 +22,7 @@ describe('API Tests', () => {
       { id: 2, title: 'Test Post 2' }
     ];
 
-    mock.onGet('https://api.example.com/posts').reply(200, mockedPosts);
+    mock.onGet('https://jsonplaceholder.typicode.com/posts').reply(200, mockedPosts);
 
     const { getByText } = render(
       <QueryClientProvider client={queryClient}>

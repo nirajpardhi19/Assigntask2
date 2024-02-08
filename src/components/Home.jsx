@@ -1,4 +1,3 @@
-// components/Home.js
 import React from 'react';
 import { useQuery } from 'react-query';
 import { useDispatch, useSelector } from 'react-redux';
@@ -6,7 +5,7 @@ import axios from 'axios';
 import { setPosts } from '../actions';
 
 const fetchPosts = async () => {
-  const response = await axios.get('https://api.example.com/posts');
+  const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
   return response.data;
 };
 
